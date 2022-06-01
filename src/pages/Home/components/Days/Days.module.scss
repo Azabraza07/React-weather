@@ -1,0 +1,115 @@
+@media screen and (max-width: 1163px) {
+  .card {
+    margin-bottom: 20px;
+  }
+}
+
+.days {
+  width: 1200px;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+  box-shadow: 2px 5px 25px -3px rgba(180, 180, 180, 0.25);
+  border-radius: 0px 0px 20px 20px;
+  background-color: var(#{--components-background-default});
+}
+@media screen and (max-width: 1024px) {
+  .days {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+.card {
+  width: 149px;
+  height: 200px;
+  background: var(#{--card-background-default});
+  border-radius: 10px;
+  padding: 11px;
+  cursor: pointer;
+  transition: all 0.5s ease-in;
+  &:hover {
+    box-shadow: var(#{--card-shadow-default});
+    position: relative;
+    top: 5px;
+  }
+  .day {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    color: var(#{--text-color-default});
+    margin-bottom: 7px;
+    &__info {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 17px;
+      color: #939cb0;
+      margin-bottom: 12px;
+    }
+  }
+}
+.img {
+  margin-bottom: 13px;
+}
+.temp__day {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  color: var(#{--text-color-default})
+}
+.temp__night,
+.info {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 16px;
+  margin-bottom: 6px;
+  color: #939cb0;
+}
+
+.tabs {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 27px;
+}
+
+@media screen and (max-width: 768px) {
+  .tabs {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .tab {
+    margin-bottom: 20px;
+  }
+}
+
+.cancel,
+.tab {
+  box-shadow: 2px 5px 25px -3px rgba(180, 180, 180, 0.25);
+  border-radius: 5px;
+  padding: 9px 20px;
+  background-color: var(#{--components-background-default});
+  color: var(#{--text-color-default});
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+.cancel {
+  margin-right: 0;
+}
+
+.tab {
+  &.active {
+    background: #4793ff;
+    color: #fff;
+  }
+}
+
+.tabs__wrapper {
+  display: flex;
+}
